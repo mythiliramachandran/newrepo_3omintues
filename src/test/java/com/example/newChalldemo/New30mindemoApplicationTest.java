@@ -1,8 +1,6 @@
-package com.example.new30mindemo;
+package com.example.newChalldemo;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class New30mindemoApplicationTest {
 

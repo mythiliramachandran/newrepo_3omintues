@@ -1,14 +1,13 @@
-package com.example.new30mindemo.controller;
+package com.example.newChalldemo.controller;
 
-import com.example.new30mindemo.model.Learnings;
-import com.example.new30mindemo.repository.LearnRepo;
+import com.example.newChalldemo.model.Learnings;
+import com.example.newChalldemo.repository.LearnRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/learn")
 public class LearnController {
     private final LearnRepo learnRepo;
     @Autowired
@@ -16,9 +15,14 @@ public class LearnController {
         this.learnRepo = learnRepo;
     }
 
-    @GetMapping
+    @GetMapping("/learn")
     public List<Learnings> getAllDetails(){
         return learnRepo.findAll();
+    }
+
+    @PostMapping("/postLearn")
+    public Learnings createLearn(@RequestBody Learnings learnings){
+        return learnRepo.save(learnings);
     }
 
 

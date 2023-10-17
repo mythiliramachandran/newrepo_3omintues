@@ -1,4 +1,4 @@
-package com.example.new30mindemo.model;
+package com.example.newChalldemo.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
