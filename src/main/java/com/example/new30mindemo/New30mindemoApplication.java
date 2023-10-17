@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class New30mindemoApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(New30mindemoApplication.class, args);
 	}
 
